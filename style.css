@@ -1,0 +1,41 @@
+.article{
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	padding: 10px;
+	align-items: center;
+	border: 1px solid #000;
+	margin: 0 10px 20px;
+	justify-content: space-between;
+	user-select: none;
+}
+
+.cart img{
+	width: 60%;
+}
+
+.cost{
+	margin: 10px 0;
+}
+
+.out{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.add-to-cart{
+	background: green;
+	color: #fff;
+	padding: 5px 10px;
+	border: 0;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+.add-to-cart:hover{
+	color: red; 
+}

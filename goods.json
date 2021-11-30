@@ -1,0 +1,28 @@
+let goods = {
+	"art1" : {
+		"name" : "Яблоко",
+		"cost" : 44,
+		"description" : "Сочные", 
+		"order" : 4,
+		"img" : "https://cdn3.iconfinder.com/data/icons/education-209/64/apple-fruit-science-school-256.png"
+	},
+	"art2" : {
+		"name" : "Вишня",
+		"cost" : 55,
+		"description" : "Спелые", 
+		"order" : 3,
+		"img" : "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_cerejas-256.png"
+	},"art3" : {
+		"name" : "Виноград",
+		"cost" : 75,
+		"description" : "Зелёный", 
+		"order" : 7,
+		"img" : "https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C229-256.png"
+	},"art4" : {
+		"name" : "Арбуз",
+		"cost" : 24,
+		"description" : "Красный",
+		"order" : 8,
+		"img" : "https://cdn2.iconfinder.com/data/icons/flat-icons-19/128/Watermelon.png"
+	}
+}
