@@ -15,7 +15,6 @@ function out() {
 			<div class="article">
 				<p class="name">${goods[key].name}</p>
 				<img src=${goods[key].img}>
-				<div class="cost">${goods[key].cost}</div>
 				<button data-id=${key} class="add-to-cart">Купить</button>
 			</div>
 		`

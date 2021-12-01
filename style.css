@@ -10,8 +10,8 @@
 	user-select: none;
 }
 
-.cart img{
-	width: 60%;
+.article img{
+	margin-bottom: 15px;
 }
 
 .cost{
@@ -37,5 +37,5 @@
 }
 
 .add-to-cart:hover{
-	color: red; 
+	color: red;
 }

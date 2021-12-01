@@ -1,0 +1,65 @@
+.cart{
+	width: 1200px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.card{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	width: 250px;
+	margin: 0 20px 40px 0;
+}
+
+.cart img{
+	width: 70%;
+	margin-bottom: 10px;
+}
+
+.cart span{
+	margin-bottom: 10px;
+}
+
+.delArt{
+	border: 0;
+	background: red;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 7px;
+	padding: 7px 10px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.delArt:hover{
+	color: blue;
+}
+
+.block-count{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-count button{
+	background: green;
+	color: #fff;
+	padding: 10px 17px;
+	border: 0;
+	border-radius: 7px;
+	cursor: pointer;
+	font-size: 22px;
+}
+
+.block-count button:hover{
+	color: red;
+}
