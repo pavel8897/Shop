@@ -1,5 +1,6 @@
 let cart = {}
 let out = document.querySelector('.cart')
+let send = document.querySelector('.send') 
 
 function loadCart() {
 	if(localStorage.getItem('cart')) {
@@ -73,10 +74,36 @@ const minusFunc = (e) => {
 	showMiniCart()	
 }
 
-function saveCart() {
+const saveCart = () => {
 	localStorage.setItem('cart', JSON.stringify(cart))
 }
 
+const sendMail = () => {
+	let name = document.querySelector('#name').value
+	let email = document.querySelector('#email').value
+	let phone = document.querySelector('#phone').value
+
+	// console.log(name == '')
+	if(name != '' && email != '' && phone != '') {
+
+		//if(isEmpty(cart)){
+		if(Object.keys(cart).length !== 0){
+			console.log('Отправляем')
+			fetch("send.php", {
+				method: 'POST',
+				headers: {
+					'Content-Type' : 'application/x-www-form-urlencoded',
+				}
+			})
+		}else{
+			console.log('Корзина пуста')
+		}
+	}else{
+		console.log('Заполните поля')
+	}
+}
+
 window.onload = function() {
+	send.addEventListener('click', sendMail)
 	loadCart()
 }
